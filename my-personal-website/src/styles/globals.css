@@ -1,0 +1,33 @@
+/* src/styles/globals.css */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  /* Default: Professional Mode */
+  --color-background: #FFFFFF;
+  --color-primary: #F3F4F6;
+  --color-primary-focus: #E5E7EB;
+  --color-text-primary: #111827;
+  --color-text-secondary: #4B5563;
+  --color-text-accent: #3B82F6;
+  --color-border: #D1D5DB;
+}
+
+[data-theme='fun'] {
+  --color-background: #1A1A2E;
+  --color-primary: #16213E;
+  --color-primary-focus: #0F3460;
+  --color-text-primary: #E94560;
+  --color-text-secondary: #EFEFEF;
+  --color-text-accent: #53D3B9;
+  --color-border: #E94560;
+}
+
+body {
+    background-color: var(--color-background);
+    color: var(--color-text-primary);
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
