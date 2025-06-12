@@ -1273,3 +1273,19 @@ section,
 .starter-section {
   /* Add your styles here */
 }
+
+
+.hidden-pdf {
+  display: none;
+  /* Optional: Add transition for smoother appearance if you want CSS-driven animation */
+  /* transition: opacity 0.5s ease-in-out, visibility 0.5s ease-in-out; */
+  /* opacity: 0; */
+  /* visibility: hidden; */
+}
+
+/* If you use the transition, you'd toggle a class like 'visible-pdf' in JS: */
+/* .visible-pdf {
+  display: block;
+  opacity: 1;
+  visibility: visible;
+} */

@@ -278,6 +278,19 @@
 		programming, with a strong commitment to crafting robust and efficient
 		solutions.
 		</p>
+
+		<!-- Download Resume Button -->
+		<div class="text-center mt-4">
+		<a
+			href="assets/pdf/stephen_newby_resume.pdf"
+			class="download-btn"
+			download
+			aria-label="Download Stephen Newby's Resume"
+		>
+			<i class="bi bi-download"></i> Download Resume (PDF)
+		</a>
+		</div>
+		<!-- End Download Resume Button -->
 	</div>
 	<!-- End Section Title -->
 
@@ -290,10 +303,10 @@
 			<h4>Stephen Newby</h4>
 			<p>
 				<em
-				>Detail-oriented and results-driven Software Engineer with a unique
-				blend of materials science, biomedical engineering, and business
-				acumen. Experienced in C, C++, Python, and C#, with a focus on
-				creating scalable and maintainable software.</em
+				>Detail-oriented and results-driven Software Engineer with a
+				unique blend of materials science, biomedical engineering, and
+				business acumen. Experienced in C, C++, Python, and C#, with a
+				focus on creating scalable and maintainable software.</em
 				>
 			</p>
 			<ul>
@@ -306,7 +319,10 @@
 
 			<h3 class="resume-title">Education</h3>
 			<div class="resume-item">
-			<h4>Diploma in Computer Science and Linux, Advanced Algorithms, and Blockchain</h4>
+			<h4>
+				Diploma in Computer Science and Linux, Advanced Algorithms, and
+				Blockchain
+			</h4>
 			<h5>January 2025 - December 2025</h5>
 			<p><em>Atlas School, Tulsa, OK</em></p>
 			<p>
@@ -329,7 +345,7 @@
 			<h5>Graduated May 2009</h5>
 			<p><em>Carnegie Mellon University, Pittsburgh, PA</em></p>
 			<p>Double Major in Biomedical Engineering</p>
-			</div>
+			</p></div>
 			<!-- End Resume Item -->
 		</div>
 
@@ -340,9 +356,17 @@
 			<h5>January 2025 - Current</h5>
 			<p><em>Atlas School, Tulsa, OK </em></p>
 			<ul>
-				<li>Aid in the teaching of core computer science and software engineering concepts</li>
-				<li>Perform Live Code Events of in-depth presentations on various coding topics</li>
-				<li>Tutor students directly one-on-one that need specific help</li>
+				<li>
+				Aid in the teaching of core computer science and software
+				engineering concepts
+				</li>
+				<li>
+				Perform Live Code Events of in-depth presentations on various
+				coding topics
+				</li>
+				<li>
+				Tutor students directly one-on-one that need specific help
+				</li>
 			</ul>
 			</div>
 			<!-- End Resume Item -->
@@ -352,7 +376,10 @@
 			<h5>December 2010 - Current</h5>
 			<p><em>Judy's Tax Accounting, Tulsa, OK</em></p>
 			<ul>
-				<li>Developed an Employee Development Program including assessment, mentor, and speaker programs</li>
+				<li>
+				Developed an Employee Development Program including assessment,
+				mentor, and speaker programs
+				</li>
 			</ul>
 			</div>
 			<!-- End Resume Item -->
@@ -362,17 +389,59 @@
 			<h5>May 2008 - August 2008</h5>
 			<p><em>Latrobe Specialty Steel, Latrobe, PA</em></p>
 			<ul>
-				<li>Created a VIM/VAR history for quality comparison with new VIM/VAR for aerospace certification</li>
-				<li>Analyzed faulty test pieces for fracture mode using SEM and reported results</li>
+				<li>
+				Created a VIM/VAR history for quality comparison with new VIM/VAR
+				for aerospace certification
+				</li>
+				<li>
+				Analyzed faulty test pieces for fracture mode using SEM and
+				reported results
+				</li>
 			</ul>
 			</div>
 			<!-- End Resume Item -->
 		</div>
 		</div>
+
+		<!-- Toggle PDF Viewer Button -->
+		<div class="text-center mt-5">
+		<button id="togglePdfBtn" class="download-btn">
+			<i class="bi bi-eye"></i> View Full Resume (PDF)
+		</button>
+		</div>
+		<!-- End Toggle PDF Viewer Button -->
+
+		<!-- PDF Viewer Section (Initially Hidden) -->
+		<div
+		class="row mt-5 pdf-viewer-wrapper hidden-pdf"
+		id="pdfViewerWrapper"
+		data-aos="fade-up"
+		data-aos-delay="300"
+		>
+		<div class="col-lg-12">
+			<h3 class="text-center mb-4">Full Resume (PDF)</h3>
+			<div class="pdf-viewer-container">
+			<iframe
+				src="assets/pdf/stephen_newby_resume.pdf"
+				width="100%"
+				height="600px"
+				style="border: none"
+				title="Stephen Newby Full Resume"
+				loading="lazy"
+			>
+				This browser does not support PDFs. Please
+				<a href="assets/pdf/stephen_newby_resume.pdf" download>
+				download the PDF
+				</a>
+				to view it.
+			</iframe>
+			</div>
+		</div>
+		</div>
+		<!-- End PDF Viewer Section -->
 	</div>
 	</section>
 	<!-- /Resume Section -->
-
     <!-- Portfolio Section -->
 	<section id="portfolio" class="portfolio section light-background">
 	<!-- Section Title -->

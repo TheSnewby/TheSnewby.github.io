@@ -227,3 +227,28 @@
   document.addEventListener('scroll', navmenuScrollspy);
 
 })();
+
+document.addEventListener("DOMContentLoaded", function () {
+  const togglePdfBtn = document.getElementById("togglePdfBtn");
+  const pdfViewerWrapper = document.getElementById("pdfViewerWrapper");
+
+  if (togglePdfBtn && pdfViewerWrapper) {
+    togglePdfBtn.addEventListener("click", function () {
+      // Toggle the 'hidden-pdf' class
+      pdfViewerWrapper.classList.toggle("hidden-pdf");
+
+      // Change button text and icon based on visibility
+      if (pdfViewerWrapper.classList.contains("hidden-pdf")) {
+        togglePdfBtn.innerHTML = '<i class="bi bi-eye"></i> View Full Resume (PDF)';
+      } else {
+        togglePdfBtn.innerHTML = '<i class="bi bi-eye-slash"></i> Hide Full Resume (PDF)';
+
+        // Optional: If you use AOS, manually refresh it after showing content
+        // This helps trigger animations if the element wasn't visible on load
+        if (typeof AOS !== 'undefined') {
+          AOS.refresh();
+        }
+      }
+    });
+  }
+});
